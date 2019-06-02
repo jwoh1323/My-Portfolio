@@ -255,3 +255,19 @@ h1, h2, h3, h4, h5, h6 {
 	color: #E87E04;
 	text-align: left;
 }
+
+.btn-primary {
+	color: #fff;
+	background-color: #121d1f;
+	padding: 10px 20px;
+	border-color: #121d1f;
+	border-radius: 0;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary:active, .btn-primary.active {
+	color: black;
+	background-color: whitesmoke;
+	border-color: whitesmoke;
+}
+.btn-primary i.fa {
+	margin-right: 10px;
+}
