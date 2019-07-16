@@ -232,7 +232,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #contactwrap {	
 	background: url(../img/contact-me.png) no-repeat center top;
-	margin-top: -70px;
+	margin-top: 10px;
 	padding-top: 350px;
 	text-align:center;
 	background-attachment: relative;
