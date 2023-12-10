@@ -1,0 +1,118 @@
+.service-card {
+	position: relative;
+	min-height: 230px;
+	border: 1px solid $border-color;
+	overflow: hidden;
+	border-radius: 3px;
+
+	.body {
+		padding: 10px;
+
+		img.icon {
+			margin-top: 40px;
+			width: 55px;
+			margin-bottom: 25px;
+			@include transition(all,.3s);
+		}
+
+		.title {
+
+		}
+
+		.subtitle {
+			position: absolute;
+			bottom: -100%;
+			opacity: 0;
+			visibility: hidden;
+			@include transition(all,.3s);
+		}
+	}
+
+	&:hover {
+		.body {
+			img.icon {
+				margin-top: 5px;
+				width: 45px;
+				margin-bottom: 15px;
+			}
+
+			.subtitle {
+				bottom: 7px;
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+	}
+}
+
+
+/*/ portfolio wrapper */
+.portfolio-card {
+	display: block;
+	position: relative;
+	overflow: hidden;
+
+	.portfolio-card-img {
+		width: 100%;
+	}
+
+	.portfolio-card-overlay {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		-webkit-transform: translate(-50%,-50%);
+		transform: translate(-50%,-50%);
+		text-align: center;
+		visibility: hidden;
+		opacity: 0;
+		background-image: linear-gradient(to top, lighten($primary, 40%) 0%, rgba(lighten($primary, 40%), .7) 99%, rgba(lighten($primary, 40%), .8) 100%);
+		@include transition(all, .3s);
+		width: 0;
+		height: 0;
+		border-radius: 50%;
+		overflow: hidden;
+
+		.portfolio-card-caption {
+			display: block;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			-webkit-transform: translate(-50%,-50%);
+			transform: translate(-50%,-50%);
+			width: 100%;
+		}
+
+	}
+
+	&:hover {
+		.portfolio-card-overlay {
+			opacity: 1;
+			visibility: visible;
+			width: 100%;
+			height: 100%;
+			border-radius: 0;
+		}
+	}
+}
+@include media-breakpoint-down(sm){
+	.portfolio-card {
+		margin-bottom: 30px;
+	}
+
+	.service-card {
+		margin-bottom: 30px;
+	}
+}
+
+
+@include media-breakpoint-down (md) {
+	.blog-card {
+		flex-direction: column;		
+
+		.blog-card-header {
+			width: 100%;
+			max-width: 100%;
+			min-width: 100%;
+		}
+	}
+}
