@@ -12019,3 +12019,10 @@ p {
 .portfolio-card .portfolio-card-caption p:last-child {
   font-size: 12px; /* Add this line */
 }
+
+@media (min-width: 992px) { /* This applies to screens with a width of 992px and above, which is Bootstrap's large (lg) breakpoint */
+  .col-lg-5 {
+      flex: 0 0 auto;
+      width: 20%;
+  }
+}
