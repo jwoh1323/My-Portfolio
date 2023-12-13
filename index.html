@@ -139,9 +139,16 @@
         <div class="container text-center">
             <p class="section-subtitle">What I Did ?</p>
             <h6 class="section-title mb-6">Portfolio</h6>
+            <div id="portfolio-filters">
+                <button class="filter-btn" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="data-analysis">Data Analysis</button>
+                <button class="filter-btn" data-filter="data-engineering">Data Engineering</button>
+                <button class="filter-btn" data-filter="data-science">Data Science</button>
+                <button class="filter-btn" data-filter="web-development">Web Development</button>
+            </div>
             <!-- row -->
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4" data-category="web-development">
                     <a href="https://github.com/jwoh1323/J-times.git" class="portfolio-card">
                         <img src="assets/imgs/folio01.png" class="portfolio-card-img" class="img-responsive rounded">    
                         <span class="portfolio-card-overlay">
@@ -153,7 +160,7 @@
                         </span>                     
                     </a>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4" data-category="data-analysis">
                     <a href="https://github.com/jwoh1323/Pyber.git" class="portfolio-card">
                         <img class="portfolio-card-img" src="assets/imgs/folio02.png" class="img-responsive rounded" >
                         <span class="portfolio-card-overlay">
@@ -165,7 +172,7 @@
                         </span>                         
                     </a>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4" data-category="web-development">
                     <a href="https://github.com/jwoh1323/Mapping-Web-Project" class="portfolio-card">
                         <img class="portfolio-card-img" src="assets/imgs/folio03.png" class="img-responsive rounded">    
                         <span class="portfolio-card-overlay">
@@ -177,7 +184,7 @@
                         </span>                     
                     </a>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4" data-category="data-analysis">
                     <a href="https://github.com/jwoh1323/Citi-Bike-Analytics-Project.git" class="portfolio-card">
                         <img class="portfolio-card-img" src="assets/imgs/folio04.png" class="img-responsive rounded">    
                         <span class="portfolio-card-overlay">
@@ -189,7 +196,7 @@
                         </span>                     
                     </a>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4" data-category="data-science">
                     <a href="https://github.com/jwoh1323/News-Category-Detection-Project.git" class="portfolio-card">
                         <img class="portfolio-card-img" src="assets/imgs/folio05.jpg" class="img-responsive rounded" >    
                         <span class="portfolio-card-overlay">
@@ -201,7 +208,7 @@
                         </span>                     
                     </a>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4" data-category="data-science">
                     <a href="https://github.com/jwoh1323/Predicting-Purchases-Ratings-and-Categories-Based-on-Amazon-Reviews.git" class="portfolio-card">
                         <img class="portfolio-card-img" src="assets/imgs/folio06.png" class="img-responsive rounded" >    
                         <span class="portfolio-card-overlay">
@@ -213,7 +220,7 @@
                         </span>                     
                     </a>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4" data-category="data-analysis">
                     <a href="https://github.com/jwoh1323/Weather-API-Project.git" class="portfolio-card">
                         <img class="portfolio-card-img" src="assets/imgs/folio07.png" class="img-responsive rounded">    
                         <span class="portfolio-card-overlay">

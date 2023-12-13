@@ -12026,3 +12026,24 @@ p {
       width: 20%;
   }
 }
+
+
+.filter-btn {
+  background-color: #695aa6; 
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  padding: 10px 30px; /* Some padding */
+  text-align: center; /* Centered text */
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Make the buttons appear on the same line */
+  font-size: 14px; /* Increase font size */
+  margin: 4px 2px; /* Add some margins */
+  cursor: pointer; /* Change mouse cursor on hover */
+  transition-duration: 0.4s; /* Add animation when hovering over the button */
+  margin-bottom: 70px;
+}
+
+.filter-btn:hover {
+  background-color: #b4add3; /* White background */
+  color: black; /* Black text */
+}

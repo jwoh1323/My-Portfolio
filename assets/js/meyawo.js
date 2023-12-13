@@ -36,3 +36,17 @@ $('#nav-toggle').click(function(){
     $(this).toggleClass('is-active')
     $('ul.nav').toggleClass('show');
 });
+
+
+document.querySelectorAll('.filter-btn').forEach(function(button) {
+    button.addEventListener('click', function() {
+        var filter = this.dataset.filter;
+        document.querySelectorAll('.col-md-4').forEach(function(card) {
+            if (filter === 'all' || card.dataset.category === filter) {
+                card.style.display = 'block';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    });
+});
