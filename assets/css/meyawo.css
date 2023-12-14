@@ -12047,10 +12047,10 @@ p {
   background-color: #b4add3; /* White background */
   color: black; /* Black text */
 }
-\/* Mobile devices (landscape phones, less than 576px) */
+
 @media (max-width: 575.98px) { 
     .filter-btn {
-        display: block; /* Make the buttons stack vertically */
+        display: vertical; /* Make the buttons stack vertically */
         width: 100%; /* Full width */
         margin-bottom: 10px; /* Add some margin to the bottom of each button */
     }
