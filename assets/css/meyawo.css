@@ -12047,3 +12047,20 @@ p {
   background-color: #b4add3; /* White background */
   color: black; /* Black text */
 }
+\/* Mobile devices (landscape phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    .filter-btn {
+        display: block; /* Make the buttons stack vertically */
+        width: 100%; /* Full width */
+        margin-bottom: 10px; /* Add some margin to the bottom of each button */
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .filter-btn {
+        display: inline-block; /* Make the buttons appear on the same line */
+        width: auto; /* Auto width */
+        margin-right: 10px; /* Add some margin to the right of each button */
+    }
+}
