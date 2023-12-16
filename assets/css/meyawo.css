@@ -12075,18 +12075,11 @@ p {
 @media (max-width: 575.98px) { 
   .portfolio-card {
       width: 100%; /* This will make the card take the full width of its parent. */
+      align-items: center;
   }
 
   .col-md-4 {
       display: flex;
       justify-content: center;
-  }
-}
-
-@media (max-width: 575.98px) { 
-  .row {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
   }
 }
