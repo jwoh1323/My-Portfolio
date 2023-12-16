@@ -12070,3 +12070,15 @@ p {
   height: 200px; /* Adjust as needed. */
   object-fit: cover; /* This will make sure the content of the card (like images) also fit the size of the card. */
 }
+
+/* Mobile devices (landscape phones, less than 576px) */
+@media (max-width: 575.98px) { 
+  .portfolio-card {
+      width: 100%; /* This will make the card take the full width of its parent. */
+  }
+
+  .col-md-4 {
+      display: flex;
+      justify-content: center;
+  }
+}
