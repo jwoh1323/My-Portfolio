@@ -12083,3 +12083,11 @@ p {
       justify-content: center;
   }
 }
+
+@media (max-width: 575.98px) { 
+  .row {
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-items: center;
+  }
+}
