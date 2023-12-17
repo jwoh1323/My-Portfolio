@@ -12089,5 +12089,6 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    grid-template-columns: 1fr;
   }
 }
