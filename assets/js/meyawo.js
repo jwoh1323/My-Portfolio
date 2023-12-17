@@ -50,3 +50,21 @@ document.querySelectorAll('.filter-btn').forEach(function(button) {
         });
     });
 });
+
+// Get all 'portfolio-card' elements
+var cards = document.querySelectorAll('.portfolio-card');
+
+// Function to filter cards
+function filterCards(category) {
+    // Loop through all cards
+    cards.forEach(function(card) {
+        // If the card's category matches the selected category, show it
+        if (card.dataset.category === category) {
+            card.style.display = 'block';
+        } 
+        // Otherwise, remove it from the DOM
+        else {
+            card.parentNode.removeChild(card);
+        }
+    });
+}
